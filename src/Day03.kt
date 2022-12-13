@@ -1,12 +1,20 @@
 fun main() {
     fun part1(input: List<String>): Int {
         var sum = 0;
+<<<<<<< HEAD
         for(line in input){
             var half1 = line.substring(0,line.length/2)
             var half2 = line.substring(line.length/2)
             for(letters in half1){
                 if(half2.contains(letters)){
                     println("half1 $half1 half2 $half2 letters $letters")
+=======
+        for(x in input){
+            var half1 = x.substring(0,x.length/2)
+            var half2 = x.substring(x.length/2)
+            for(letters in half1){
+                if(half2.contains(letters)){
+>>>>>>> origin/main
                     var letter = letters
                     when(letter){
                         'a' -> sum += 1
@@ -62,12 +70,16 @@ fun main() {
                         'Y' -> sum += 51
                         'Z' -> sum += 52
                     }
+<<<<<<< HEAD
                     break
+=======
+>>>>>>> origin/main
                 }
             }
         }
         return sum
     }
+<<<<<<< HEAD
 
     fun part2(input: List<String>): Int {
         var sum = 0;
@@ -142,3 +154,8 @@ fun main() {
     val input = readInput("Rucksacks")
     println(part2(input))
 }
+=======
+    val input = readInput("Rucksacks")
+    println(part1(input))
+}
+>>>>>>> origin/main
